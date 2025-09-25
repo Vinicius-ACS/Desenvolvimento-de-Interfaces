@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:beige;
+            color:black;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+        }
+        header{
+            background-color: #7ba58d;
+            color:beige;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: nome;
+            color: beige;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .btn {
+            display:inline-block;
+            padding: 10px 20px;
+            background-color: blue;
+            color: beige;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .btn:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem vindo ao meu Portifólio</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-alves-7a2b41351/?original_referer=https%3A%2F%2Fgithub.com%2F">Linkedin</a>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Sou estudante de Desenvolvimento de Interfaces apaixonado por UX/UI</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus projetos</h2>
+            <ul>
+                <li>Site de Receitas acessível</li>
+                <li>App de Controle de Estudos</li>
+                <li>Protótipo em Figma de uma Loja Virtual</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" 
+                required><br><br>
+
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" 
+                required><br><br>
+                
+                <label for="mensagem"></label><br>
+                <textarea id="mensagem" name="mensagem" rows="4"
+                required></textarea><br><br>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Meu Portifólio | Feito com boas práticas de UX\UY</p>
+    </footer>
+</body>   
+</html>
